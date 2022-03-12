@@ -3,3 +3,7 @@ body {
   background-color: rgb(184, 10, 77);
   color: aliceblue;
 }
+* {
+  margin: 0;
+  padding: 0;
+}

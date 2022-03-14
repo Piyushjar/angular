@@ -7,16 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular';
-  name="Piyush";
+  data=20;
   show=true;
-  color="refd";
+  color="green";
   getName(name:any){
     console.log(name);
   }
-  setValue(val:string){
-    this.title=val;
+  setValue(){
+    this.color=="blue" ? this.color="green": this.color="blue"
+ }
+  updateData(){
+    this.data=Math.floor(Math.random()*100)
   }
-  
 
 }
 //interpolation 

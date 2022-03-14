@@ -1,1 +1,30 @@
-<p>Contact</p>
+<!-- <form #basicform="ngForm" (ngSubmit)="getData(basicform.value)">
+  <input type="text" ngModel name="user" placeholder="enter user name" /> <br />
+  <input
+    type="text"
+    ngModel
+    name="email"
+    placeholder="enter user email"
+  /><br />
+  <input type="password" ngModel name="password" placeholder="enter password" />
+  <button>Save</button>
+</form>
+
+<ul>
+  <li>{{ userData.user }}</li>
+  <li>{{ userData.email }}</li>
+  <li>{{ userData.password }}</li>
+</ul> -->
+
+<!-- TODO LIST -->
+<h1>{{ item }}</h1>
+<input #todo type="text" name="todo" placeholder="type something" />
+<br />
+<br />
+
+<button (click)="addTodo(todo.value)">Add Todo</button>
+<br />
+
+<ul *ngFor="let todo of todos">
+  <li>{{ todo.name }}<button (click)="removeTodo(todo.id)">Remove</button></li>
+</ul>

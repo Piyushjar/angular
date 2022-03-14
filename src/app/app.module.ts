@@ -15,7 +15,7 @@ import { ContactComponent } from './contact/contact.component';
     ContactComponent
   ],
   imports: [
-    BrowserModule,RouterModule,
+    BrowserModule,RouterModule,FormsModule,
     RouterModule.forRoot([
       {path: 'app-user-list', component: UserListComponent},
       {path: 'app-contact', component: ContactComponent},  

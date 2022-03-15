@@ -1,7 +1,10 @@
 <app-navbar> </app-navbar>
+<h1>{{ data }}</h1>
+<app-contact (updateDataEvent)="updateData($event)"></app-contact>
 
-<app-contact [item]="data"></app-contact>
-<button (click)="updateData()">update child data</button>
+<!-- <app-contact [item]="data"></app-contact>
+<button (click)="updateData()">update child data</button> -->
+
 <!-- <h1 [style.color]="color">Hello {{ title }}</h1>
 <button (click)="setValue()">change condition</button> -->
 <router-outlet></router-outlet>

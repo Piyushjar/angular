@@ -17,7 +17,7 @@
 </ul> -->
 
 <!-- TODO LIST -->
-<h1>{{ item }}</h1>
+<!-- <h1>{{ item }}</h1>
 <input #todo type="text" name="todo" placeholder="type something" />
 <br />
 <br />
@@ -27,4 +27,8 @@
 
 <ul *ngFor="let todo of todos">
   <li>{{ todo.name }}<button (click)="removeTodo(todo.id)">Remove</button></li>
-</ul>
+</ul> -->
+
+<!-- send data from child to parent -->
+<input type="text" #box />
+<button (click)="updateDataEvent.emit(box.value)">update data</button>

@@ -6,19 +6,26 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular';
-  data=20;
-  show=true;
-  color="green";
-  getName(name:any){
-    console.log(name);
+//   title = 'angular';
+//   data=20;
+//   show=true;
+//   color="green";
+//   getName(name:any){
+//     console.log(name);
+//   }
+//   setValue(){
+//     this.color=="blue" ? this.color="green": this.color="blue"
+//  }
+//   updateData(){
+//     this.data=Math.floor(Math.random()*100)
+//   }
+  data="";
+
+  updateData(item:string){
+    console.warn(item)
+    this.data=item;
   }
-  setValue(){
-    this.color=="blue" ? this.color="green": this.color="blue"
- }
-  updateData(){
-    this.data=Math.floor(Math.random()*100)
-  }
+
 
 }
 //interpolation 

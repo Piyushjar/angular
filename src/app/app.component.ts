@@ -20,13 +20,15 @@ export class AppComponent {
 //   updateData(){
 //     this.data=Math.floor(Math.random()*100)
 //   }
-  data="";
+  // data="";
 
-  updateData(item:string){
-    console.warn(item)
-    this.data=item;
-  }
-
+  // updateData(item:string){
+  //   console.warn(item)
+  //   this.data=item;
+  // }
+userLogin(item:any){
+  console.log(item);
+}
 
 }
 //interpolation 

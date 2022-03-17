@@ -3,6 +3,24 @@
 
 <router-outlet></router-outlet>
 
+<!-- template driven form -->
+<!-- <form #loginForm="ngForm" (ngSubmit)="userLogin(loginForm.value)">
+  <input type="text" placeholder="enter name" name="name" ngModel />
+  <br />
+  <input type="password" placeholder="password" name="password" ngModel />
+  <br />
+  <button>Login</button>
+</form>
+<button (click)="userLogin(loginForm.value)">Login</button> -->
+<!-- custom pipes -->
+<!-- <h1>{{ 20 | usdInr: 75 }}</h1> -->
+
+<!-- advanced pipes -->
+<!-- <h1>{{ title | slice: 3:6 | uppercase }}</h1>
+<h2>{{ 2.3 | number: "3.2-4" }}</h2>
+<h2>{{ 20 | currency: "INR" }}</h2>
+<h2>{{ "who are we" | uppercase | slice: 0:1 }}</h2> -->
+
 <!-- pipes -->
 <!-- <h1>{{ title | uppercase }}</h1>
 <h2>{{ date | date: "fullDate" }}</h2> -->
@@ -17,8 +35,10 @@
 <!-- <app-contact [item]="data"></app-contact>
 <button (click)="updateData()">update child data</button> -->
 
+<!-- color binding -->
 <!-- <h1 [style.color]="color">Hello {{ title }}</h1>
 <button (click)="setValue()">change condition</button> -->
+
 <!-- nested loop -->
 <!-- <ul *ngFor="let user of userDetails">
   <li>{{ user.name }}</li>

@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ContactComponent } from './contact/contact.component';
+import { UsdInrPipe } from './pipes/usd-inr.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserListComponent,
     NavbarComponent,
-    ContactComponent
+    ContactComponent,
+    UsdInrPipe
   ],
   imports: [
     BrowserModule,RouterModule,FormsModule,

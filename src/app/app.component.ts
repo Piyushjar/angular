@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { FormControl,FormGroup } from '@angular/forms';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -26,9 +26,16 @@ export class AppComponent {
   //   console.warn(item)
   //   this.data=item;
   // }
-userLogin(item:any){
-  console.log(item);
-}
+
+
+  //Reactive forms
+// userLogin(){
+//   console.warn(this.loginForm.value)
+// }
+// loginForm = new FormGroup({
+//   username: new FormControl('piyush'),
+//   password: new FormControl(''),
+// })
 
 }
 //interpolation 

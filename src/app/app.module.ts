@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule} from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ContactComponent } from './contact/contact.component';
 import { UsdInrPipe } from './pipes/usd-inr.pipe';
+
 
 @NgModule({
   declarations: [
@@ -17,7 +18,7 @@ import { UsdInrPipe } from './pipes/usd-inr.pipe';
     UsdInrPipe
   ],
   imports: [
-    BrowserModule,RouterModule,FormsModule,
+    BrowserModule,RouterModule,FormsModule,ReactiveFormsModule,
     RouterModule.forRoot([
       {path: 'app-user-list', component: UserListComponent},
       {path: 'app-contact', component: ContactComponent},  

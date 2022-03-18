@@ -3,6 +3,45 @@
 
 <router-outlet></router-outlet>
 
+<!-- reactive forms -->
+<!-- <form [formGroup]="loginForm" (ngSubmit)="userLogin()">
+  <input type="text" placeholder="enter name" formControlName="username" />
+  <input type="password" placeholder="password" formControlName="password" />
+  <button>Submit</button>
+</form> -->
+
+<!-- template driven form validation -->
+<!-- jin forms ki handling html(template) me hoti h -->
+<!-- <form #LoginForm="ngForm" (ngSubmit)="userLogin(LoginForm.value)">
+  <input
+    type="text"
+    required
+    #name="ngModel"
+    placeholder="enter name"
+    name="name"
+    pattern=""
+    ngModel
+  />
+  <br />
+  <span *ngIf="name.invalid && name.touched" style="color: red"
+    >please enter valid input</span
+  >
+  <br />
+  <input
+    type="password"
+    required
+    #password="ngModel"
+    placeholder="enter password"
+    name="password"
+    minlength="2"
+    ngModel
+  />
+  <br /><span *ngIf="password.invalid && password.touched" style="color: red"
+    >please enter valid input</span
+  >
+  <button [disabled]="LoginForm.invalid">Submit</button>
+</form> -->
+
 <!-- template driven form -->
 <!-- <form #loginForm="ngForm" (ngSubmit)="userLogin(loginForm.value)">
   <input type="text" placeholder="enter name" name="name" ngModel />
@@ -12,6 +51,7 @@
   <button>Login</button>
 </form>
 <button (click)="userLogin(loginForm.value)">Login</button> -->
+
 <!-- custom pipes -->
 <!-- <h1>{{ 20 | usdInr: 75 }}</h1> -->
 

@@ -1,5 +1,5 @@
 .nav {
-  background-color: rgb(8, 8, 8);
+  background-color: rgb(15, 2, 51);
   height: 10vh;
   display: flex;
   justify-content: flex-end;
@@ -12,7 +12,7 @@
   padding: 0 10px;
 }
 .logo {
-  color: #fff;
+  color: rgb(34, 228, 66);
   float: left;
   margin-left: 20px;
   padding-top: 5px;
@@ -27,6 +27,6 @@
 }
 
 .nav li:hover {
-  background-color: rgb(184, 10, 77);
+  background-color: rgb(241, 56, 102);
   transition: ease 0.5s;
 }

@@ -1,7 +1,13 @@
 <app-navbar> </app-navbar>
 <h1>{{ title }}</h1>
+<!-- <router-outlet></router-outlet> -->
 
-<router-outlet></router-outlet>
+<app-footer></app-footer>
+<!-- services -->
+<!-- classes which have data  -->
+<ul>
+  <li *ngFor="let user of users">{{ user.name + " ==>" + user.age }}</li>
+</ul>
 
 <!-- reactive forms -->
 <!-- <form [formGroup]="loginForm" (ngSubmit)="userLogin()">

@@ -7,6 +7,7 @@ import { UserListComponent } from './user-list/user-list.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ContactComponent } from './contact/contact.component';
 import { UsdInrPipe } from './pipes/usd-inr.pipe';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { UsdInrPipe } from './pipes/usd-inr.pipe';
     UserListComponent,
     NavbarComponent,
     ContactComponent,
-    UsdInrPipe
+    UsdInrPipe,
+    FooterComponent
   ],
   imports: [
     BrowserModule,RouterModule,FormsModule,ReactiveFormsModule,

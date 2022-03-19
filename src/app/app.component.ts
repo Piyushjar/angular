@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { FormControl,FormGroup } from '@angular/forms';
+import { EmailValidator, FormControl,FormGroup } from '@angular/forms';
+import {UserDataService} from './services/user-data.service';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,7 +9,7 @@ import { FormControl,FormGroup } from '@angular/forms';
 })
 export class AppComponent {
   title = 'angular';
-  date =Date();
+  // date =Date();
 //   data=20;
 //   show=true;
 //   color="green";
@@ -36,6 +38,13 @@ export class AppComponent {
 //   username: new FormControl('piyush'),
 //   password: new FormControl(''),
 // })
+
+users:any;
+constructor(private userData:UserDataService){
+  console.log("userData",userData.users());
+  this.users=userData.users();
+}
+
 
 }
 //interpolation 

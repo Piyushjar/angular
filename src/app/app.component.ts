@@ -39,10 +39,12 @@ export class AppComponent {
 //   password: new FormControl(''),
 // })
 
-users:any;
-constructor(private userData:UserDataService){
-  console.log("userData",userData.users());
-  this.users=userData.users();
+quotes:any;
+constructor(private quotesData:UserDataService){
+  quotesData.quotesApi().subscribe((data)=>{
+    console.log(data);
+    this.quotes=data;
+  });
 }
 
 

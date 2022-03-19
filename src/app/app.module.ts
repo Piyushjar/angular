@@ -8,6 +8,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ContactComponent } from './contact/contact.component';
 import { UsdInrPipe } from './pipes/usd-inr.pipe';
 import { FooterComponent } from './footer/footer.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -20,7 +21,7 @@ import { FooterComponent } from './footer/footer.component';
     FooterComponent
   ],
   imports: [
-    BrowserModule,RouterModule,FormsModule,ReactiveFormsModule,
+    BrowserModule,RouterModule,FormsModule,ReactiveFormsModule,HttpClientModule,
     RouterModule.forRoot([
       {path: 'app-user-list', component: UserListComponent},
       {path: 'app-contact', component: ContactComponent},  

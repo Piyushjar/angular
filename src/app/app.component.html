@@ -1,13 +1,18 @@
 <app-navbar> </app-navbar>
 <h1>{{ title }}</h1>
 <!-- <router-outlet></router-outlet> -->
+<!-- <app-footer></app-footer> -->
 
-<app-footer></app-footer>
+<!-- api calling  -->
+<ul>
+  <li *ngFor="let quote of quotes">{{ quote.text + " ~" + quote.author }}</li>
+</ul>
+
 <!-- services -->
 <!-- classes which have data  -->
-<ul>
+<!-- <ul>
   <li *ngFor="let user of users">{{ user.name + " ==>" + user.age }}</li>
-</ul>
+</ul> -->
 
 <!-- reactive forms -->
 <!-- <form [formGroup]="loginForm" (ngSubmit)="userLogin()">

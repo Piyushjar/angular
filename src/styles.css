@@ -11,6 +11,9 @@ body {
   background-color: rgb(241, 56, 102);
 }
 
+li {
+  color: aliceblue;
+}
 ::-webkit-scrollbar-track {
   background-color: blue;
 }

@@ -12,6 +12,9 @@ export class UserDataService {
     return this.http.get('https://type.fit/api/quotes');
   }
 
+  randomPhotos(){
+    return this.http.get('https://randomfox.ca/floof/');
+  }
   // normal data
   users(){
     return [
@@ -19,6 +22,10 @@ export class UserDataService {
       {name:"tobi",age:"28",email:"tobi.uchicha@gmail.com"},
       {name:"sasori",age:"22",email:"sasori.ofsand@gmail.com"}
     ]
+  }
+
+  getRandom(){
+   return this.randomPhotos();
   }
 
 }

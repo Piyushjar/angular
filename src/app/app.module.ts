@@ -9,6 +9,7 @@ import { ContactComponent } from './contact/contact.component';
 import { UsdInrPipe } from './pipes/usd-inr.pipe';
 import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PhotosComponent } from './photos/photos.component';
 
 
 @NgModule({
@@ -18,12 +19,14 @@ import { HttpClientModule } from '@angular/common/http';
     NavbarComponent,
     ContactComponent,
     UsdInrPipe,
-    FooterComponent
+    FooterComponent,
+    PhotosComponent
   ],
   imports: [
     BrowserModule,RouterModule,FormsModule,ReactiveFormsModule,HttpClientModule,
     RouterModule.forRoot([
       {path: 'app-user-list', component: UserListComponent},
+      {path: 'app-photos', component: PhotosComponent},  
       {path: 'app-contact', component: ContactComponent},  
       {path: '', redirectTo: '', pathMatch: 'full'},
     ]),

@@ -10,7 +10,7 @@ export class FooterComponent implements OnInit {
 
   users:any;
   constructor(private userData:UserDataService){
-  console.log("userData",userData.users());
+  // userData.quotesApi().subscribe((data)=> console.log(data));
   this.users=userData.users();
  }
 

@@ -10,15 +10,16 @@ export class PhotosComponent implements OnInit {
 
   photos:any;
   constructor(private randomImage:UserDataService) {
-    randomImage.randomPhotos().subscribe((data)=>{
+    this.getRandomImages();
+  }
+   
+   getRandomImages(){
+    this.randomImage.randomPhotos().subscribe((data)=>{
       console.log(data);
       this.photos=data;
     })
    }
 
-   getRandomImages(){
-     this.randomImage.getRandom();
-   }
   ngOnInit(): void {
   }
 

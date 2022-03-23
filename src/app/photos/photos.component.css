@@ -1,9 +1,12 @@
+* {
+  background-color: antiquewhite;
+}
 .image {
   border-color: "black";
   width: 300px;
   height: 300px;
   margin: 10px;
-  background-color: white;
+  background-color: rgb(247, 199, 199);
   border: 2px solid black;
 }
 .results {
@@ -14,12 +17,14 @@
 }
 
 .button {
-  width: 300px;
+  width: 110px;
   font-family: monospace;
-  color: #fffafa;
+  color: #f10b0b;
   border-radius: 5px;
-  background-color: rgb(20, 18, 18);
+  background-color: rgb(250, 201, 201);
   cursor: pointer;
+  padding: 5px;
+  margin-bottom: 5px;
 }
 .button:hover {
   transform: scale(0.99);
